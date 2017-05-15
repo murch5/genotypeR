@@ -39,4 +39,4 @@ vignettes/*.pdf
 *.txt
 *.htm
 *.gz
-
+*.data
