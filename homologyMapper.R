@@ -125,3 +125,10 @@ write.table(overlap,file=con,sep=",",quote=FALSE,row.names = FALSE,col.names=TRU
 con<-file("Ly6CMouseByGeneName.csv",encoding="UTF-8")
 write.table(testMus,file=con,sep=",",quote=FALSE,row.names = FALSE,col.names=TRUE)
 
+test <- read.table("expMusToFixNames.csv",sep=",")
+
+testMus2 <- mapEnsemblToGeneName(test[,1],"Homo sapiens")
+
+con<-file("Ly6CMouseNur77.csv",encoding="UTF-8")
+write.table(testMus,file=con,sep=",",quote=FALSE,row.names = FALSE,col.names=TRUE)
+
